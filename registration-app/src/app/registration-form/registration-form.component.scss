@@ -1,0 +1,78 @@
+fieldset {
+  background: #fff;
+  border: 0;
+  box-shadow: 1px 2px 3px rgba(0,0,0,.25);
+  margin: 0;
+  padding: .5em 2em 0;
+
+  &:first-of-type {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+
+  &:last-of-type {
+    border-radius: 0;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding-bottom: 2em;
+  }
+}
+
+label, span {
+  display: block;
+  margin-bottom: .5em;
+}
+
+input, select {
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  display: block;
+  height: 2em;
+  margin-bottom: 2.5em;
+  padding: .25em;
+  width: 20em;
+
+  &[type="radio"] {
+    display: inline-block;
+    height: auto;
+    margin-right: .75em;
+    width: auto;
+
+    &+label {
+      display: inline;
+
+      &::after {
+        content: "";
+        display: block;
+      }
+    }
+  }
+}
+
+button {
+  background: #ddd;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  cursor: pointer;
+  display: block;
+  margin: 1em 0 0 0;
+  padding: .5em;
+
+  &:hover, &:focus {
+    background: #eee;
+  }
+}
+
+sup {
+  color: red;
+}
+
+small {
+  color: red;
+  position: relative;
+  top: -2.75em;
+}
+
+.ng-invalid.ng-touched {
+  border-color: red;
+}
